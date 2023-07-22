@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AR shoes</title>
+    <title>XR Spinosaurus</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     
     <script>
       // WebXR requires HTTPS, so the site doesn't work if someone manually enters
@@ -83,7 +83,7 @@
         <!-- Model source: https://sketchfab.com/3d-models/spinosaurus-2135501583704537907645bf723685e7
              Model author: https://sketchfab.com/VapTor
              Model license: CC Attribution -->
-        <a-asset-item id="spinosaurus" src="/assets/jellyfish-model.glb" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="spinosaurus" src="https://cdn.glitch.com/324a5290-5aa7-4efc-92d6-ae0736433b12%2Fspinosaurus.glb" response-type="arraybuffer"></a-asset-item>
       </a-assets>
       
       <a-camera position="0 1.2 0"></a-camera>
@@ -118,6 +118,7 @@
                ar-shadows="opacity: 0.3"
                visible="false"></a-plane>
     </a-scene>
+
     <div id="text">
       <h1>A-Frame Spinosaurus for VR/AR</h1>
     
@@ -141,7 +142,6 @@
         Powered by <a href="https://aframe.io/blog/aframe-v1.0.0/">A-Frame v1.0.0</a>.
       </p>
     </div>
-    
     <script>
       function setSize(scale) {
         document.getElementById('dino').setAttribute('scale', {x: scale, y: scale, z: scale});
